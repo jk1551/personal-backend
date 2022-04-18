@@ -1,6 +1,8 @@
 class ProfilesController < ApplicationController
   before_action :set_profile, only: %i[ show update destroy ]
 
+  # Profiles
+
   # GET /profiles
   def index
     @profiles = Profile.all
